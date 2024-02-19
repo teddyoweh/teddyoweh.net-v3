@@ -27,7 +27,7 @@ export default function About() {
                 Research
             </div>
             <div className="bio">
-                I'm very versatile when it comes to research - primary focus on Core ML, Reinforcement & Deep Learning Models - but I've used my technical prowess to solve problems in other fields like Quantum Computing, Data Science & Analysis, Aerospace + System Engineering and more.
+                 Teddy is very versatile when it comes to research - primary focus on Core ML, Reinforcement & Deep Learning Models - but I have used my technical prowess to solve problems in other fields like Quantum Computing, Data Science & Analysis, Aerospace + System Engineering and more.
             </div>
            
         </div>
