@@ -52,11 +52,12 @@ export default function Nav() {
         </div>
         <div className="links">
           {
-            pages.map((page) => {
+            pages.map((page,index) => {
                 const clasx = page.link === pathname ? "active" : ""
               return (
                 <Link href={page.link} 
                 className={clasx}
+                key={index}
                 >
                   <label htmlFor="">
                     {page.name}
@@ -107,11 +108,13 @@ export default function Nav() {
                 </div>
             <div className="nav-links">
               {
-                pages.map((page) => {
+                pages.map((page,index) => {
                     const clasx =    pathname==page.link?"nav-link active":"nav-link"
 
                   return (
-                    <div className={clasx}>
+                    <div className={clasx}
+                    key={index}
+                    >
   <Link href={page.link}>
                         <label for="">{
                           page.name

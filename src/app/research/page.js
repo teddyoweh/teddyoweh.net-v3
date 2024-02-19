@@ -43,7 +43,9 @@ export default function About() {
                             return(
                                 <>
                         
-                                <div className="research-teddy">
+                                <div className="research-teddy"
+                                key={index}
+                                >
                                 <div className="research-teddy-content">
                                     <label htmlFor="">
                                    {research.title}
