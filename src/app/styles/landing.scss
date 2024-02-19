@@ -1,0 +1,61 @@
+
+.body{
+    padding: 30px 60px;
+    margin-top: 30px;
+    .hero{
+        .first{
+            font-family: "Canela Web";
+        font-size: 50px;
+        margin-bottom: 20px;
+        }
+        .second{
+            font-family: "GT America";
+            font-size: 20px;
+            width: 73%;
+            color: #212125;
+       &.btmm{
+        margin-bottom: 30px;
+       }
+            span.hg{
+                font-weight: 800;
+                color: #3875ec;
+            }
+            a{
+                text-decoration: none;
+                color: #000;
+                // font-weight: 600;
+         
+                border: solid #222;
+                border-width: 0px 0px 1px;
+                padding-bottom: 1px;
+                span{
+                    font-family: "system-ui";
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .body{
+        padding: 30px 20px;
+        .hero{
+            .first{
+                font-size: 30px;
+            }
+            .second{
+                font-size: 14px;
+                width: 100%;
+                line-height: 1.5;
+                span.hg{
+                    font-weight: 500;
+                    span{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    
+}

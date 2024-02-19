@@ -1,0 +1,40 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        .name{
+            font-family: "Canela Web";
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .bio{
+            font-family: "GT America";
+            font-size: 20px;
+            width: 73%;
+            color: #212125;
+            margin-bottom: 30px;
+            span.hg{
+                font-weight: 800;
+                color: #3875ec;
+            }
+            a{
+                text-decoration: none;
+                color: #000;
+                font-size: 18px;
+                border: solid #222;
+                border-width: 0px 0px 1px;
+                padding-bottom: 1px;
+                span{
+                    font-family: "system-ui";
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

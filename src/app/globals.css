@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Pen+Script&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ 
+@font-face {
+    font-family: 'Canela Web';
+    src: url('https://www.harvard.edu/wp-content/themes/core/assets/fonts/theme/canela/Canela-Regular-Web.woff2') format('woff2');
+ 
+  }
+  
+  @font-face {
+    font-family: 'GT America';
+    src:  url('https://www.harvard.edu/wp-content/themes/core/assets/fonts/theme/gt-america/GT-America-Standard-Regular.woff2') format('woff2');
+ 
+  }
+  
+body{
+    margin:0 !important;
+    background: #fff;
+    /*fbf7f0*/
+
+ 
+}
+ 
+
+*{
+    box-sizing: border-box;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+.slide-up{
+  animation-name: slideFadeUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.slide-up1{
+  animation-name: slideFadeUp;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes slideFadeUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}
+.slide-down {
+  animation-name: slideFadeDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideFadeDown {
+  0% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(50px);
+      opacity: 0;
+  }
+}

@@ -1,0 +1,514 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .name{
+            font-family: "Canela Web";
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .bio{
+            font-family: "GT America";
+            font-size: 14px;
+            width: 70%;
+            color: #212125;
+            margin-bottom: 30px;
+            text-align: center;
+            span.hg{
+                font-weight: 800;
+                color: #3875ec;
+            }
+            a{
+                text-decoration: none;
+                color: #000;
+                font-size: 14px;
+                border: solid #222;
+                border-width: 0px 0px 1px;
+                padding-bottom: 1px;
+                span{
+                    font-family: "system-ui";
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+.project-hide{
+    display: none !important;
+}
+.projects-content{
+    p{
+        padding: 20px 0;
+        font-family: poppins;
+        font-size: 16px;
+        font-weight: 400;
+        color: #333;
+           a{
+            border-style: solid;
+            border-width: 0px 0px 1px;
+            border-color: #222;
+            transition: 0.4s;
+            width: max-content;
+            &:hover{
+                transition: 0.4s;
+                border-width: 0px 0px 2px;
+                border-color: #333;
+            }
+            span{
+                font-size: 14px;
+                font-family: system-ui;
+            }
+        }
+    }
+    .projects-img{
+        width: 100%;
+        text-align: right;
+        margin-bottom: 30px;
+        img{
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-style: solid;
+            border-radius: 10px;
+            border-width: 1px;
+            border-color: #333;
+        }
+        label{
+            width: 100%;
+            font-family: "GT America";
+            font-size: 13px;
+            color: #555;
+            text-align: right;
+            a{
+                border-style: solid;
+                border-width: 0px 0px 1px;
+                border-color: #222;
+                transition: 0.4s;
+                color: #000;
+                &:hover{
+                    transition: 0.4s;
+                    border-width: 0px 0px 2px;
+                    border-color: #333;
+                }
+                span{
+                    font-size: 14px;
+                    font-family: system-ui;
+                }
+            }
+        }
+    }
+}
+.teddys-projects{
+
+    padding: 20px 0;
+    width: 60%;
+    &:nth-last-child(1){
+        // hr{
+        //     display: none;
+        
+        // }
+    }
+    .search-projects{
+        background-color: #eee;
+        padding: 10px 20px;
+        width: 100%;
+        border-radius: 7px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #ccc;
+        font-family: 'GT America';
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        i{
+            color: #999;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        
+        input{
+
+            background-color: transparent;
+            outline: none;
+            width: 100%;
+            border: none;
+            &::placeholder{
+                color: #999;
+                font-family: 'GT America';
+            }
+        }
+    }
+    .project-filters{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        .project-filter{
+            min-width: max-content;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #333;
+            border-radius: 10px;
+            color: #333;
+            font-family: 'GT America';
+            transition: 0.4s;
+            font-size: 15px;
+            cursor: pointer;
+            label{
+                cursor: pointer;
+            }
+            &:hover{
+                transition: 0.4s;
+                background-color: #333;
+                color: #fff;
+            }
+            &.active{
+
+                background-color: #333;
+                color: #fff;
+            }
+
+        }
+    }
+    .projects-list{
+        label.header{
+            font-family: "GT America";
+            font-size: 30px;
+            font-weight: 600;
+            color: #333;
+            padding-bottom: 10px;
+        }
+        .project-hide{
+            display: none;
+        }
+        .teddys-project{
+      
+            transition: 0.4s;
+            margin: 20px 0;
+            transition: 0.4s;
+            padding: 20px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            &:hover{
+                transition: 0.4s;
+                transform: scale(1.1);
+                //background-color: #f9f7f7;
+                box-shadow: 0px 0px 50px rgba(250, 250, 250, 0.694)
+            
+            }
+            label{
+                font-family: "GT America";
+                font-size: 16px;
+                font-weight: 600;
+                color: #333;
+            }
+            p{
+            
+                font-family: "GT America";
+                font-size: 16px;
+                font-weight: 400;
+                color: #333;
+                a{
+                    border-style: solid;
+                    border-width: 0px 0px 1px;
+                    border-color: #222;
+                    transition: 0.4s;
+                    width: max-content;
+                    &:hover{
+                        transition: 0.4s;
+                        border-width: 0px 0px 2px;
+                        border-color: #333;
+                    }
+                    span{
+                        font-size: 14px;
+                        font-family: system-ui;
+                    }
+                }
+            }
+        }
+
+    }
+}
+.projects-page{
+  
+    .projects-page-page{
+        padding-top: 40px;
+        .projects-page-header{
+            label{
+                font-family: "GT America";
+                font-size: 36px;
+                font-weight: 600;
+                color: #333;
+            }
+        }
+        .langs{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        .tags{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-top: 10px;
+            flex-wrap: wrap;
+            .tag{
+                margin-right: 10px;
+                margin-bottom: 10px;
+                padding: 5px 10px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #333;
+                border-radius: 10px;
+                background-color: #333;
+                color: #fff;
+                font-family: 'GT America';
+                transition: 0.4s;
+                font-size: 12px;
+                cursor: pointer;
+                
+
+            }
+        }
+        .socials{
+            padding-top: 14px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .social{
+                margin-right: 10px;
+                a{
+                    border-style: solid;
+                    border-width: 0px 0px 1px;
+                    border-color: #222;
+                    transition: 0.4s;
+                    &:hover{
+                        transition: 0.4s;
+                        border-width: 0px 0px 2px;
+                        border-color: #333;
+                    }
+                    span{
+                        font-size: 14px;
+                        font-family: system-ui;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.project-not-found{
+    padding-top: 40px;
+    label{
+        font-family: "GT America";
+        font-size: 36px;
+        font-weight: 600;
+        color: #333;
+    }
+}
+.prg-language{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    margin-right:6px ;
+    span{
+        height: 8px;
+        width: 8px;
+        border-radius: 100%;
+        margin-right: 6px;
+        &.python{
+            background-color: #3572A5;
+        }
+        &.javascript{
+            background-color: #f1e05a;
+        }
+        &.c{
+            background-color: #555555;
+        }
+        &.next{
+            background-color: #000000;
+        }
+        &.react{
+            background-color: #61dafb;
+        }
+        &.node{
+            background-color: #026e00;
+        }
+        &.shell{
+            background-color: #89e051;
+        }
+        &.nest{
+            background-color: #E0234E;
+        }
+        &.vue{
+            background-color: #41b883;
+        }
+        &.html{
+            background-color: #e34c26;
+        }
+        &.css{
+            background-color: #563d7c;
+        }
+        &.java{
+            background-color: #b07219;
+        }
+        &.c{
+            background-color: #555555;
+        }
+        &.csharp{
+            background-color: #178600;
+        }
+        &.php{
+            background-color: #4F5D95;
+        }
+        &.ruby{
+            background-color: #701516;
+        }
+        &.typescript{
+            background-color: #2b7489;
+        }
+        &.swift{
+            background-color: #ffac45;
+        }
+        &.go{
+            background-color: #00ADD8;
+        }
+        &.kotlin{
+            background-color: #F18E33;
+        }
+        &.rust{
+            background-color: #dea584;
+        }
+        &.scala{
+            background-color: #c22d40;
+        }
+        &.r{
+            background-color: #198CE7;
+        }
+        &.dart{
+            background-color: #00B4AB;
+        }
+        &.elixir{
+            background-color: #6e4a7e;
+        }
+        &.haskell{
+            background-color: #5e5086;
+        }
+        &.julia{
+            background-color: #a270ba;
+        }
+        &.jupyter{
+            background-color: #DA5B0B;
+        }
+    }
+    label{
+        font-size: 13px !important;
+        font-family: "GT America" !important;
+        font-weight: 400 !important;
+        color: #666;
+    }
+     
+}
+.pr-dv{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    a.viewbtn{
+        border-style: solid;
+        margin-top: 10px;
+        padding: 6px 12px;
+        border-width: 1px;
+        border-color: #222;
+        transition: 0.4s;
+        border-radius: 30px;
+        cursor: pointer;
+        &:hover{
+            transition: 0.4s;
+      
+            background-color: #333;
+            color: #fff;
+        }
+        span{
+            font-size: 14px;
+            font-family: system-ui;
+        }
+    }
+}
+.pr-dvi{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.pr-dv2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.pr-dv-divider{
+    height: 10px;
+    width: 1px;
+    background-color: #666;
+    margin: 0 10px;
+}
+
+@media screen and (max-width:786px) {
+    .projects-content {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        p{
+            padding: 0px;
+        }
+        .projects-img{
+            label{
+                text-align: center;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                justify-content: center;
+                margin-top: 8px;
+            }
+        }
+      
+    }
+    .teddys-projects{
+        width: 90%;
+        .project-filters{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            .project-filter{
+                font-size: 13px;
+            }
+
+        }
+        .projects-list{
+            .teddys-project{
+                label,p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    
+}

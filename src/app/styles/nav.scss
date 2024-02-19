@@ -1,0 +1,325 @@
+.app {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+//   .app::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     z-index: -1;
+//     background-image: url("../assets/bg.jpeg");
+//     background-size: cover;
+//     filter: blur(15px); }
+
+  @media screen and (max-width: 768px) {
+    .app::before {
+     filter: blur(9px);
+    }
+    
+  }
+nav{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+
+    .right-stuff{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .menu-btn{
+            margin-left: 9px;
+        }
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            object-position:center;
+            border-radius: 10px;
+        }
+        .name{
+         display: flex;
+         flex-direction: column;
+         label{
+            font-size: 16px;
+            font-weight: 600;
+            margin-left: 10px;
+            font-family: "GT America";
+         }
+         span{
+            font-size: 12px;
+            font-weight: 400;
+            margin-left: 10px;
+            font-family: "GT America";
+            color: #8E8E8E;
+         }
+        }
+    }
+    .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            padding: 0px 10px;text-decoration: none;
+            font-size: 16px;
+            font-family: "GT America";
+            font-weight: 600;
+            color: #51515156;
+            cursor: pointer;
+            &.active{
+                color: #000;
+            }
+            label{
+                cursor: pointer;
+            }
+        }
+    }
+    .empty{
+        display: flex;
+        border-width: 1px 1px 3px 1px;
+        border-style: solid;
+        border-color: #51515156;
+        padding: 5px 10px;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .green{
+            background-color: #38cbec;
+ 
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        margin-right: 6px;
+        
+        }
+        .label{
+            font-size: 13px;
+            font-family: "GT America";
+            font-weight: 600;
+            color: #767676;
+  
+            cursor: pointer;
+          
+        }
+    }
+}
+
+footer{
+    width: 50%;
+    padding: 40px 60px;
+    .footer-header{
+        font-size:25px;
+        font-family: "GT America";
+        font-weight: 500;
+
+    }
+    .footer-content{
+        p{
+            padding-top: 10px;
+            font-family: "GT America";
+            font-size: 17px;
+            font-weight: 400;
+            color: #444;
+        }
+        a{
+            border-style: solid;
+            border-width: 0px 0px 1px;
+            border-color: #444;
+            transition: 0.4s;
+            font-family: "GT America";
+            color: #000;
+            margin-right: 10px;
+            &:hover{
+                transition: 0.4s;
+                border-width: 0px 0px 2px;
+                border-color: #333;
+            }
+            span{
+                font-size: 14px;
+                font-family: system-ui;
+            }
+        }
+        .socials{
+            margin-top: 20px;
+        }
+    }
+}
+.slide-down {
+    animation-name: slideFadeDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideFadeDown {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+}
+@media (max-width: 768px){
+    .menubox{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 999;
+        height: 100%;
+        left: 0;
+        padding: 40px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .cancel-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+            padding-bottom: 30px;
+            .cancel-icon{
+                font-size: 26px;
+                color: #555;
+                cursor: pointer;
+                transition: 0.4s;
+                &:hover{
+                    transition: 0.4s;
+                    color: #555;
+                }
+            }
+        }
+
+        .nav-links{
+            width:90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .nav-link{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: #000;
+                margin-bottom: 20px;
+                cursor: pointer;
+                a{
+                    color:#51515156;
+                    font-family: "GT America";
+                    cursor: pointer;
+                    label{
+                        cursor: pointer;
+                    }
+                    &:hover{
+                        color: #515151a5;
+                    }
+                }
+                &.active{
+                    a{
+                        cursor: pointer;
+                        color: #000;
+                        padding-bottom: 5px;
+                    }
+              
+                }
+            }
+        }
+    }
+nav{
+    padding: 20px 20px;
+    .logo{
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+        }
+        .name{
+            label{
+                font-size: 14px;
+            }
+            span{
+                font-size: 10px;
+            }
+        }
+    }
+    .links{
+        display: none;
+    }
+    .empty{
+        .green{
+            height: 6px;
+            width: 6px;
+        }
+        .label{
+            font-size: 9px;
+            font-weight: 400;
+        }
+    }
+}
+footer{
+    width: 100%;
+    padding: 20px 20px;
+    .footer-header{
+        font-size:20px;
+    }
+    .footer-content{
+        p{
+            font-size: 14px;
+        }
+        .socials{
+           a{
+            font-size: 14px;
+           }
+            
+        }
+    }
+}
+}
+
+
+
+.nav-in {
+    animation: slideIn 0.5s forwards;
+  }
+  
+  .nav-out {
+    animation: slideOut 0.5s forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
