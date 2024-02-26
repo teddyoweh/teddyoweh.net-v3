@@ -19,7 +19,7 @@ export default function Home() {
             Pushing Machines to Brilliance.
           </div>
           <div className="second btmm">
-          Reasearch <span className="hg"> <a target="_blank" href="https://qsideinstitute.org/">@qside <span>↗</span></a></span> / <span className="hg"> <a target="_blank" href="https://minds-lab-msu.github.io/">@MINDS Lab <span>↗</span></a></span> (ML + Data).
+          Research <span className="hg"> <a target="_blank" href="https://qsideinstitute.org/">@qside <span>↗</span></a></span> / <span className="hg"> <a target="_blank" href="https://minds-lab-msu.github.io/">@MINDS Lab <span>↗</span></a></span> (ML + Data).
 Researcher @ Morgan State 
 <span className="hg">
  <a href="https://p-neumann.github.io/quantum/" target="_blank"> Quantum Computing Lab <span>↗</span></a></span>
