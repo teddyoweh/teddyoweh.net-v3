@@ -20,6 +20,9 @@
     .app::before {
      filter: blur(9px);
     }
+    .menu-btn{
+        display: block;
+    }
     
   }
 nav{
@@ -36,6 +39,7 @@ nav{
         align-items: center;
         .menu-btn{
             margin-left: 9px;
+            display: none;
         }
     }
     .logo{
