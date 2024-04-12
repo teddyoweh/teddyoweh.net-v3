@@ -1,6 +1,6 @@
 "use client"
 import { usePathname } from "next/navigation";
-import teddy from "../assets/ife.png";
+import teddy from "../assets/teddy-profile.png";
 import "../styles/nav.scss"
 import Link from "next/link";
 import { HambergerMenu } from "iconsax-react";
