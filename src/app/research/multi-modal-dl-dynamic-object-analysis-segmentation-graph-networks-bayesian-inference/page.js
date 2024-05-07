@@ -52,7 +52,7 @@ export default function About() {
         <li><strong>Multi-scale Feature Pyramid Generation:</strong> This process leverages a deep convolutional network that applies a series of transformations to extract features at multiple scales. The mathematical formulation incorporates a convolution operation defined over a spatial domain with varying kernel sizes to capture both local and global features effectively:
           <BlockMath>{`F_l = \\text{ReLU}(\\text{BN}(\\text{Conv}(F_{l-1}))) \\quad \\text{for } l = 1, 2, ..., L`}</BlockMath>
         </li>
-        <li><strong>Spatial Pyramid Pooling:</strong> This step is crucial for aggregating features at various scales and enhancing the network's robustness to object scale variations. It is mathematically formulated as a union of max-pooling operations performed over a hierarchy of grid partitions:
+        <li><strong>Spatial Pyramid Pooling:</strong> This step is crucial for aggregating features at various scales and enhancing the network&#39;s robustness to object scale variations. It is mathematically formulated as a union of max-pooling operations performed over a hierarchy of grid partitions:
           <BlockMath>{`S = \\bigcup_{{k \\in \\{1,4,16,64\\}}} \\text{MaxPool}_k(F_L)`}</BlockMath>
         </li>
         <li><strong>Dynamic Anchor Assignment:</strong> A key innovation in improving bounding box predictions, this technique dynamically assigns anchors using a k-means clustering algorithm on ground truth bounding boxes to minimize IoU discrepancies, which is formulated as:
@@ -80,7 +80,7 @@ export default function About() {
         <li><strong>Wasserstein GAN with Gradient Penalty:</strong> This formulation stabilizes training of the GAN by enforcing a soft version of the Lipschitz constraint on the discriminator, enhancing the quality and variability of generated samples:
           <BlockMath>{`\\min_G \\max_D V(D, G) = \\mathbb{E}_{x \\sim p_{\\text{data}}} [D(x)] - \\mathbb{E}_{z \\sim p_z} [D(G(z))] + \\lambda \\mathbb{E}_{\\hat{x} \\sim p_{\\hat{x}}} [(\\|\\nabla_{\\hat{x}} D(\\hat{x})\\|_2 - 1)^2]`}</BlockMath>
         </li>
-        <li><strong>Adaptive Augmentation Policy:</strong> This policy adapts augmentation strategies based on the current training state of the model, optimizing the model's exposure to a diverse range of training examples:
+        <li><strong>Adaptive Augmentation Policy:</strong> This policy adapts augmentation strategies based on the current training state of the model, optimizing the model&#39;s exposure to a diverse range of training examples:
           <BlockMath>{`\\Delta = \\argmin_{\\delta} \\mathbb{E}_{x, \\delta \\sim p(\\delta)} [\\log(1 - D(x+\\delta))]`}</BlockMath>
         </li>
         <li><strong>Output:</strong> Augmented image with uncertainty estimation.</li>
@@ -169,7 +169,7 @@ export default function About() {
           <strong>Feature Extraction Network:</strong> Advanced neural networks like VGG or ResNet are employed to extract detailed features from detected vehicles, which are critical inputs for the speed estimation model.
         </li>
         <li>
-          <strong>Regression Network:</strong> A regression model computes the vehicle's speed from extracted features, integrating techniques such as dropout and batch normalization to enhance prediction stability and generalization:
+          <strong>Regression Network:</strong> A regression model computes the vehicle&#39;s speed from extracted features, integrating techniques such as dropout and batch normalization to enhance prediction stability and generalization:
           <BlockMath>
             {`\\hat{y} = W_r \\cdot x + b`}
           </BlockMath>
