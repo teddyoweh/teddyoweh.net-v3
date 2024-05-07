@@ -41,7 +41,7 @@ export default function About() {
         <div className="paper-content">
 
             <p>
-            Sure, here&#39;s a more project-oriented rewrite:
+        
 
 Developing a solution to tackle the crucial challenges of precise license plate segmentation and reliable vehicle tracking is the core objective of this project. Introducing an innovative deep learning framework, we aim to surpass the shortcomings of conventional methods, particularly in handling diverse and unpredictable environmental conditions. This project holds significance in various applications, spanning from surveillance systems to traffic management.        </p>
      
