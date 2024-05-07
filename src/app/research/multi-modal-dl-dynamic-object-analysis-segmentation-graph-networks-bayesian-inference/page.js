@@ -186,7 +186,7 @@ export default function About() {
         </li>
       </ul>
       <div className="demo" id="demo-div">
-        <h2>
+        <h2 className="dtext">
             Demos - Traffic Analysis for Stephenville City & Tarleton State University Campus
         </h2>
         <video src="/v1.mp4" controls={true} />
