@@ -44,6 +44,13 @@ export default function About() {
             Addressing the pivotal needs of accurate license plate segmentation and robust vehicle tracking in applications from surveillance to traffic management, this paper introduces a novel deep learning framework to overcome the limitations of traditional methods which struggle with complex, variable environmental condition
             </p>
      
+            <div className="demos-text">
+    <label htmlFor="
+    ">
+        <a href="#demo-div">Demos</a>
+    </label>
+</div>
+
             <h1> Approach</h1>
       <h2> License Plate Segmentation</h2>
       <h3>Hierarchical Convolutional Feature Extraction Pipeline</h3>
@@ -178,7 +185,7 @@ export default function About() {
           <strong>Output:</strong> The estimated speeds of vehicles, quantified with uncertainty metrics to account for variations in detection accuracy and environmental factors.
         </li>
       </ul>
-      <div className="demo">
+      <div className="demo" id="demo-div">
         <h2>
             Demos - Traffic Analysis for Stephenville City & Tarleton State University Campus
         </h2>
