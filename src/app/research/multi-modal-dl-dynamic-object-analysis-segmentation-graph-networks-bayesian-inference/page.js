@@ -41,8 +41,9 @@ export default function About() {
         <div className="paper-content">
 
             <p>
-            Addressing the pivotal needs of accurate license plate segmentation and robust vehicle tracking in applications from surveillance to traffic management, this paper introduces a novel deep learning framework to overcome the limitations of traditional methods which struggle with complex, variable environmental condition
-            </p>
+            Sure, here's a more project-oriented rewrite:
+
+Developing a solution to tackle the crucial challenges of precise license plate segmentation and reliable vehicle tracking is the core objective of this project. Introducing an innovative deep learning framework, we aim to surpass the shortcomings of conventional methods, particularly in handling diverse and unpredictable environmental conditions. This project holds significance in various applications, spanning from surveillance systems to traffic management.        </p>
      
             <div className="demos-text">
     <label htmlFor="
