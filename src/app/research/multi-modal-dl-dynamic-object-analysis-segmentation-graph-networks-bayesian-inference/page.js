@@ -46,7 +46,7 @@ export default function About() {
      
             <h1> Approach</h1>
       <h2> License Plate Segmentation</h2>
-      <h3>ierarchical Convolutional Feature Extraction Pipeline</h3>
+      <h3>Hierarchical Convolutional Feature Extraction Pipeline</h3>
       <ul>
         <li><strong>Input Image</strong></li>
         <li><strong>Multi-scale Feature Pyramid Generation:</strong> This process leverages a deep convolutional network that applies a series of transformations to extract features at multiple scales. The mathematical formulation incorporates a convolution operation defined over a spatial domain with varying kernel sizes to capture both local and global features effectively:
