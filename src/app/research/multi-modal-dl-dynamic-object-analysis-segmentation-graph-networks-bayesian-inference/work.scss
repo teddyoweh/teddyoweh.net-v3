@@ -1,0 +1,59 @@
+.body{
+    
+    .top{
+        margin-top: 40px;
+        align-items: flex-start;
+        padding: 0px 40px;
+
+        .name{
+            font-size: 29px;
+            text-align: left;
+            width: 100%;
+            font-family: "Google Sans";
+
+        }
+        .bio{
+            font-size: 19px;
+            width: 100%;
+
+            text-align: left;
+        }
+    }
+    .paper-content{
+        padding: 0px 40px;
+        p{
+            font-size: 19px;
+            font-family: "Google Sans";
+            text-align: left;
+        }
+        strong{
+            margin-bottom: 10px;
+            font-family: monospace;
+        }
+        h3{
+            font-family: monospace;
+
+        }
+        li{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            font-family: monospace;
+            padding: 10px 0;
+            font-size: 16px;
+        }
+        .demo{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            video{
+                height: 400px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .code-div{
+ 
+ transform: scale(0.9);
+    }
+}
