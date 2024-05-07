@@ -58,3 +58,42 @@
  transform: scale(0.9);
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .body{
+        .top{
+            padding: 0px 20px;
+            .name{
+                font-size: 20px;
+            }
+            .bio{
+                font-size: 16px;
+            }
+        }
+        .paper-content{
+            padding: 0px 20px;
+            p{
+                font-size: 16px;
+            }
+            strong{
+                font-size: 16px;
+            }
+            h3{
+                font-size: 16px;
+            }
+            li{
+                font-size: 14px;
+            }
+            .demo{
+                video{
+                    height: 200px;
+                }
+            }
+        }
+    }
+    .code-div{
+        transform: scale(0.7);
+    }
+    
+}
