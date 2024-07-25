@@ -20,7 +20,7 @@ export default function Footer(){
                         <span>↗</span>
                     </a> */}
                     <a href="https://www.github.com/teddyoweh" target="_blank">
-                        Github
+                        GitHub
                         <span>↗</span>
                     </a>
                     <a href="https://www.linkedin.com/in/teddyoweh" target="_blank">
